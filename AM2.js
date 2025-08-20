@@ -1,0 +1,22 @@
+//2. Assignments using map()
+
+//1.Given an array [2, 4, 6, 8], create a new array where each number is doubled
+let numbers1 = [2, 4, 6, 8];
+let doubledNumbers = numbers.map(number => number * 2);
+
+console.log(doubledNumbers); 
+
+/*2.Convert an array of names ["suhail", "khan", "rahul"]
+ into an array of capitalized names (["Suhail", "Khan", "Rahul"]).*/
+let names = ["suhail", "khan", "rahul"];
+let capitalizedNames = names.map(name => name.charAt(0).toUpperCase() + name.slice(1));
+
+console.log(capitalizedNames);
+
+/*3.Given an array of numbers, 
+return a new array with the square of each number.*/
+let numbers = [1, 2, 3, 4, 5];
+let squaredNumbers = numbers.map(numbers => number ** 2);
+
+console.log(squaredNumbers);  
+

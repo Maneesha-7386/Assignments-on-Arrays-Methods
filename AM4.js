@@ -1,0 +1,25 @@
+/*4. Combination of map() and filter()
+1.From an array [1,2,3,4,5,6,7,8,9,10] →
+First filter only even numbers
+Then return their squares.*/
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let result1 = numbers.filter(number => number % 2 === 0).map(number => number ** 2);
+
+console.log(result1); 
+
+/*2.Given an array of student objects:
+let students = [
+  { name: "Suhail", marks: 85 },
+  { name: "Rahul", marks: 45 },
+  { name: "Aman", marks: 65 }
+];*/
+
+let students = [
+  { name: "Suhail", marks: 85 },
+  { name: "Rahul", marks: 45 },
+  { name: "Aman", marks: 65 }
+];
+
+let result = students.filter(student => student.marks > 60).map(student => student.name);
+
+console.log(result); 
